@@ -150,7 +150,7 @@ function App() {
                 </button>
               </div>
               <div className="knowledge-image">
-                <img src="/images/knowledge.jpg" alt="Botany Book" />
+                <img src="./images/knowledge.jpg" alt="Botany Book" />
               </div>
             </section>
 
@@ -160,21 +160,21 @@ function App() {
                 <h2 className="section-title">Our Projects</h2>
                 <div className="project-grid">
                   <div className="project-card">
-                    <img src="/images/planting.jpg" alt="Planting" />
+                    <img src="./images/planting.jpg" alt="Planting" />
                     <div className="p-content">
                       <h4>Sundarbans Restoration</h4>
                       <p>Planting 5,000 Mangrove saplings to protect the coast.</p>
                     </div>
                   </div>
                   <div className="project-card">
-                    <img src="/images/Jackfruit Tree.jpg" alt="Jackfruit Tree" />
+                    <img src="./images/Jackfruit Tree.jpg" alt="Jackfruit Tree" />
                     <div className="p-content">
                       <h4>School Fruit Orchards</h4>
                       <p>Providing vitamin-rich fruit trees to rural schools.</p>
                     </div>
                   </div>
                   <div className="project-card">
-                    <img src="/images/Rooftop.jpg" alt="Rooftop" />
+                    <img src="./images/Rooftop.jpg" alt="Rooftop" />
                     <div className="p-content">
                       <h4>Dhaka Rooftop Campaign</h4>
                       <p>Turning grey concrete into green sanctuaries.</p>
