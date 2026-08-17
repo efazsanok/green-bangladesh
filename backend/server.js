@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // MySQL connection pool targeting XAMPP
-const db = mysql.createPool({
+const database = mysql.createPool({
   host: 'localhost',
   user: 'root',
   password: '', 
@@ -17,7 +17,7 @@ const db = mysql.createPool({
 // GET: Fetch all trees for search & encyclopedia
 app.get('/api/trees', async (req, res) => {
   try {
-    const [rows] = await db.query('SELECT * FROM encyclopedia_db.trees');
+    const [rows] = await database.query('SELECT * FROM encyclopedia_db.trees');
     res.json(rows);
   } catch (error) {
     console.error('Database Error:', error);
@@ -34,7 +34,7 @@ app.post('/api/register', async (req, res) => {
   }
 
   try {
-    await db.query(
+    await database.query(
       'INSERT INTO member_db.members (full_name, email, phone) VALUES (?, ?, ?)',
       [fullName, email, phone || null]
     );
